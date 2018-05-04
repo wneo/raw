@@ -85,7 +85,7 @@ func (c *Conn) SetWriteDeadline(t time.Time) error {
 	return c.p.SetWriteDeadline(t)
 }
 
-var _ bpf.Setter = &Conn{}
+//var _ bpf.Setter = &Conn{}
 
 // SetBPF attaches an assembled BPF program to the connection.
 func (c *Conn) SetBPF(filter []bpf.RawInstruction) error {
